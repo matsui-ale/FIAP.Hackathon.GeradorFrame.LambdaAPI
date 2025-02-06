@@ -28,9 +28,7 @@ namespace FIAP.Hackathon.GeradorFrame.Lambda.Application.UseCases
         {
             try
             {
-                var result = await _solicitacaoRepository.GetById(request);
-
-                //return new SolicitacaoResponse { Id = Guid.NewGuid() };
+                var result = await _solicitacaoRepository.GetById(request)
 
                 return _mapper.Map<SolicitacaoResponse>(result);
             }
