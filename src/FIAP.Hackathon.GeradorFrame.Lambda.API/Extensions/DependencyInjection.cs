@@ -32,6 +32,7 @@ namespace FIAP.Hackathon.GeradorFrame.Lambda.API.Extensions
 
             //Repository
             services.AddTransient<ISolicitacaoRepository, SolicitacaoRepository>();
+
             services.AddTransient<IS3Service, S3Service>();
 
             //UseCase
